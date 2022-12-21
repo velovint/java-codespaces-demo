@@ -14,10 +14,17 @@
 		"ghcr.io/devcontainers/features/sshd:1": {
         		"version": "latest"
     		}
-	}
+	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	"forwardPorts": [
+		2222
+	],
+	"portsAttributes": {
+		"2222": {
+			"label": "SSHD"
+		}
+	}
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "java -version",
