@@ -8,3 +8,5 @@
  */
 
 rootProject.name = 'codespaces-demo'
+
+include 'gs-data-rest'
